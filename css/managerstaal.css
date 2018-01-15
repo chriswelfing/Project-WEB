@@ -1,0 +1,157 @@
+.beamer-image {
+    display: block;
+    position: relative;
+    top: -2.5em;
+    margin: 0 auto;
+    max-height: 10em;
+    z-index: 99;
+}
+
+section#background {
+    background-color: #466b8e;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    vertical-align: top;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+#managerstaal-text {
+    padding: 1.5em;
+    margin: 0 1em;
+    margin-bottom: 2em;
+    max-width: 45em;
+    margin: 0 auto;
+}
+
+#text {
+    font-family: sans-serif;
+    position: relative;
+    top: -4em;
+    background-color: #ffffff;
+    padding: 1em;
+    border-style: solid;
+    border-width: 2em;
+    border-color: #f1f2f2;
+}
+h1 {
+    font-size: 2em;
+}
+
+p {
+    clear: both;
+    padding-top: 1em;
+}
+.presentation-point:before {
+    content: "\2022";
+    color: #000000;
+}
+
+.text-title {
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.presentation-point {
+    display: block;
+    margin-top: 0.4em;
+}
+
+.horizontale-balk-top {
+    display: block;
+    position: relative;
+    top: -3em;
+    left: -1em;
+    margin: 0 auto;
+    z-index: 98;
+    width: 100%;
+    width: calc(100% + 2em);
+}
+
+.horizontale-balk-bottom {
+    display: block;
+    position: relative;
+    top: -5em;
+    left: -1em;
+    margin: 0 auto;
+    z-index: 98;
+    width: calc(100% + 2em);
+}
+
+@media screen and (max-width: 45rem) {
+    .presentation-point {
+        margin-top: 1em;
+        display: inline-block;
+    }
+    .text-title {
+        display: inline-block
+    }
+    .presentation-image-left {
+        margin: 2em auto;
+        width: 50%;
+        display: block;
+    }
+    .presentation-image-right {
+        margin: 2em auto;
+        width: 50%;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 45rem) {
+    .presentation-image-left {
+        margin-top: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        float: left;
+        width: 40%;
+        display: inline-block;
+        -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    }
+
+    .presentation-image-left:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+
+    .presentation-image-right {
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        float: right;
+        width: 40%;
+        display: inline-block;
+        -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+
+    }
+    .presentation-image-right:hover {
+    -webkit-transform: scale(2);
+    transform: scale(2)
+}
+}
+
+.stand {
+    display: block;
+    position: relative;
+    top: -5em;
+    margin: 0 auto;
+    width: 70%;
+}

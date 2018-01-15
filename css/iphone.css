@@ -1,0 +1,63 @@
+section#background {
+    background-color: #263238;
+    position: fixed;
+    top: 0;
+    left: 0;
+    vertical-align: top;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+#iphone-text {
+    margin: 0 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+    background-color: rgba(248, 248, 248, 80);
+    border-radius: 1em;
+}
+
+#top-bar {
+    width: 100%;
+    display: inline-block;
+}
+
+#e-mail-subject {
+    font-size: 2em;
+    padding-right: 4em;
+    text-align: center;
+    font-weight: 600;
+    height: 2em;
+}
+
+#e-mail-metadata {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+#iphone-text p {
+    font-size: 1em;
+}
+
+#top-bar-image-placeholder {
+    width: 10em;
+}
+
+.top-bar-image {
+    height: 2.5em;
+    margin-top: 1em;
+    float: left;
+}
+
+.typo {
+    color: #D50000;
+    text-decoration: underline;
+    text-decoration-color: #D50000;
+}

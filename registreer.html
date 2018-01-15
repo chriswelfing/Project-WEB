@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inloggenregistreer.css">
+    <title>Registreer</title>
+</head>
+
+<body>
+    <header class="main_header">
+        <section>
+            <a href="index.html" class="a-header"><img src="images/nslogo.svg" alt="ns_logo_header"></a>
+            <section class="header_icons_right">
+                <a href="login.html" class="header_icons_right_img-1"></a>
+                <a href="#" class="header_icons_right_img-2"></a>
+            </section>
+        </section>
+    </header>
+    <section id="background"></section>
+    <main>
+        <form action="register" id="register">
+            <fieldset class="registerfieldset">
+                <legend>Accountgegevens</legend>
+                <label for="phonenumber">Telefoonnummer (optioneel)</label>
+                <input class="form-text-input i" type="tel" id="phonenumber" pattern="[0-9]{0,100}">
+                <label for="voornaam">Voornaam</label>
+                <input class="form-text-input r" type="text" id="voornaam" required>
+                <label for="achternaam">Achternaam</label>
+                <input class="form-text-input r" type="text" id="achternaam" required> </fieldset>
+            <fieldset class="registerfieldset">
+                <legend class="form_category">Inloggegevens</legend>
+                <label for="email">E-mail</label>
+                <input class="form-text-input r" type="email" id="email" required>
+                <label for="confirm-email">bevestig e-mail</label>
+                <input class="form-text-input r" type="email" id="confirm-email" required>
+                <label for="password">Wachtwoord</label>
+                <input class="form-text-input r" type="password" id="password" required>
+                <label for="confirm_password">Herhaal wachtwoord</label>
+                <input class="form-text-input r" type="password" id="confirm_password" required> </fieldset>
+            <fieldset class="registerfieldset">
+                <legend class="form_category">Voorkeuren</legend>
+                <input type="checkbox" id="ontvang-emails">
+                <label for="ontvang-emails">Ontvang e-mails met verhalen</label>
+            </fieldset>
+            <fieldset class="registerfieldset">
+                <legend class="form_category">Gebruikersvoorwaarden</legend>
+                <input type="checkbox" id="accepteer-algemene-voorwaarden" required>
+                <label for="accepteer-algemene-voorwaarden">Accepteer de algemene voorwaarden</label>
+            </fieldset>
+            <input type="submit" name="register" value="Registreer"> </form>
+    </main>
+</body>
+
+</html>

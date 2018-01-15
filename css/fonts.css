@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "NS Sans";
+  src: url(../fonts/nssans__-webfont.eot);
+  src: url(../fonts/nssans__-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/nssans__-webfont.woff) format("woff"), url(../fonts/nssans__-webfont.ttf) format("truetype"), url(../fonts/nssans__-webfont.svg#ns_sansregular) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "NS Sans";
+  src: url(../fonts/nssanita-webfont.eot);
+  src: url(../fonts/nssanita-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/nssanita-webfont.woff) format("woff"), url(../fonts/nssanita-webfont.svg#ns_sansitalic) format("svg");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "NS Sans";
+  src: url(../fonts/nssanbit-webfont.eot);
+  src: url(../fonts/nssanbit-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/nssanbit-webfont.woff) format("woff"), url(../fonts/nssanbit-webfont.ttf) format("truetype"), url(../fonts/nssanbit-webfont.svg#ns_sansbold_italic) format("svg");
+  font-weight: 700;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "NS Sans";
+  src: url(../fonts/nssanbol-webfont.eot);
+  src: url(../fonts/nssanbol-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/nssanbol-webfont.woff) format("woff"), url(../fonts/nssanbol-webfont.ttf) format("truetype"), url(../fonts/nssanbol-webfont.svg#ns_sansbold) format("svg");
+  font-weight: 700;
+  font-style: normal
+}
