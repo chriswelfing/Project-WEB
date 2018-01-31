@@ -1,14 +1,8 @@
-var optionsButton = document.getElementById('more_options_expand');
-var moreOptions = document.getElementById('options');
+/jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true/
+var optionsButton = document.querySelector("#more_options_expand");
+var moreOptions = document.querySelector("#options");
+optionsButton.addEventListener("click", toggleoptions);
 
-function changeClass() {
-    var currentClass = moreOptions.className;
-    if (currentClass == "main_form_hide") {
-        moreOptions.className = "main_form_show";
-        console.log('toon opties geactiveerd');
-    }
-    else if (currentClass == "main_form_show") {
-        moreOptions.className = "main_form_hide";
-    }
+function toggleoptions() {
+    moreOptions.classList.toggle("main_form_show");
 }
-optionsButton.addEventListener("click", changeClass);

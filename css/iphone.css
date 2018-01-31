@@ -1,5 +1,5 @@
-section#background {
-    background-color: #263238;
+div#background_iphone {
+    background-color: #231E20;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,10 @@ section#background {
 }
 
 #iphone-text {
-    margin: 0 1em;
+    font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "Arial", "sans-serif";
+    line-height: 1.2em;
+    max-width: 25em;
+    margin: 0 auto;
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 1em;
@@ -25,17 +28,21 @@ section#background {
     display: inline-block;
 }
 
-#e-mail-subject {
-    font-size: 2em;
-    padding-right: 4em;
+.e-mail-subject {
+    font-size: 4em!important;
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
-    font-weight: 600;
-    height: 2em;
+    display: inline-block;
 }
 
 #e-mail-metadata {
+    font-weight: 400;
     border-bottom-style: solid;
     border-bottom-width: thin;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 2em;
 }
 
 h3 {
@@ -56,8 +63,41 @@ h3 {
     float: left;
 }
 
-.typo {
+span.typo {
     color: #D50000;
     text-decoration: underline;
     text-decoration-color: #D50000;
+    display: inline-block;
+}
+
+@keyframes pHover {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+}
+
+p:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    animation: pHover 0.5s;
+}
+
+@keyframes typoanimation {
+    from {
+        color: #D50000;
+        background-color: rgba(213, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(213, 0, 0, 1);
+        color: #FFFFFF;
+    }
+}
+
+span.typo:hover {
+    background-color: rgba(213, 0, 0, 1);
+    color: #FFFFFF;
+    display: inline-block;
+    animation: typoanimation 0.5s;
 }

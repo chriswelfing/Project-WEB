@@ -12,22 +12,24 @@
 
 <body>
     <header class="main_header">
-        <section> <a href="index.html" class="a-header"><img src="images/nslogo.svg" alt="ns_logo_header"></a>
-            <section class="header_icons_right">
+        <div>
+            <a href="index.html" class="a-header"><img src="images/nslogo.svg" alt="ns_logo_header"></a>
+            <div class="header_icons_right">
                 <a href="login.html" class="header_icons_right_img-1"></a>
-                <a href="#" class="header_icons_right_img-2"></a>
-            </section>
-        </section>
+                <a href="saved.html" class="header_icons_right_img-2"></a>
+            </div>
+        </div>
     </header>
-    <section id="background"></section>
+    <div id="background"></div>
     <main>
-        <form action="register" id="register">
+        <form action="index.html" id="register">
             <fieldset>
                 <legend>Inloggegevens</legend>
+                <p>Om gebruik te maken van de verhalenwebsite van de NS moet u ingelogd zijn met uw Mijn NS account. Heeft u nog geen account? Dan kunt u er gemakkelijk een aanmaken. Helemaal Gratis.</p>
                 <label for="login-email">E-mailadres</label>
-                <input class="form-text-input" type="text" id="login-email" placeholder="E-mailadres">
+                <input class="form-text-input" type="email" id="login-email" placeholder="E-mailadres">
                 <label for="password">Wachtwoord</label>
-                <input class="form-text-input" type="text" id="password">
+                <input class="form-text-input" type="password" placeholder="Wachtwoord" id="password">
                 <input type="checkbox" id="save-password">
                 <label for="save-password">Onthoud wachtwoord</label>
                 <input type="submit" name="inloggen" value="Inloggen"> <a href="registreer.html">Geen account? Maak er een aan!</a> </fieldset>

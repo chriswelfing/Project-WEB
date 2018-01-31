@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-section#background {
+div#background_straattaal {
     background-image: url(../verhalen/straattaal-images/brick_texture.jpg);
     background-size: contain;
     position: fixed;
@@ -28,13 +28,16 @@ section#background {
 }
 
 #straattaal-text {
+    line-height: 2.1em;
+    max-width: 30em;
     padding: 1.5em;
-    margin: 0 1em;
+    margin: 0 auto;
     margin-bottom: 2em;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .first-words {
+    line-height: 0.5em;
     font-family: '08 Underground';
     font-size: 2.5em;
     float: left;
@@ -157,7 +160,7 @@ section#background {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     -webkit-transition-property: transform;
-    transition-property: transform
+    transition-property: transform;
 }
 
 .slang_pink:hover {
@@ -165,7 +168,7 @@ section#background {
     transform: scale(1.5)
 }
 
-p {
+article p {
     color: #ffffff;
     font-family: 'Marker-Felt';
     font-size: 1.3em;
@@ -175,10 +178,17 @@ p {
     display: block;
     width: 20em;
     margin: 0 auto;
+    padding: 2em 0;
 }
 
 .storytitle {
+    color: #ffffff;
     position: relative;
-    top: -1em;
+    background-color: rgba(0, 0, 0, 0.65);
     font-size: 1.8em;
+    padding: 0.5em;
+    font-family: '08 Underground';
+    letter-spacing: 0.3em;
+    font-size: 2.3em;
+    margin-bottom: 1em;
 }

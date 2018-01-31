@@ -17,6 +17,9 @@
     section#options {
         width: 100%;
     }
+    #searchformbuttons {
+        margin-top: 1em;
+    }
     #more_options_expand {
         float: right;
         position: relative;
@@ -58,7 +61,7 @@
         -moz-appearance: none;
         appearance: none;
     }
-    form [name="resultaten"]:hover  {
+    form [name="resultaten"]:hover {
         color: #fff;
         text-decoration: none;
         cursor: pointer;

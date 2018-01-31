@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Walkway";
+    src: url(../fonts/Walkway_SemiBold.woff);
+}
+
 .beamer-image {
     display: block;
     position: relative;
@@ -7,8 +12,12 @@
     z-index: 99;
 }
 
-section#background {
-    background-color: #466b8e;
+h1.title {
+    font-family: 'Walkway';
+}
+
+div#background_managerstaal {
+    background-color: #ACCFD5;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -25,11 +34,12 @@ section#background {
     padding: 1.5em;
     margin: 0 1em;
     margin-bottom: 2em;
-    max-width: 45em;
+    max-width: 40em;
     margin: 0 auto;
 }
 
 #text {
+    line-height: 1.3em;
     font-family: sans-serif;
     position: relative;
     top: -4em;
@@ -39,21 +49,66 @@ section#background {
     border-width: 2em;
     border-color: #f1f2f2;
 }
-h1 {
+
+#text h1 {
     font-size: 2em;
+    margin: 0 auto;
+    padding-left: 0em;
 }
 
 p {
     clear: both;
     padding-top: 1em;
 }
+
 .presentation-point:before {
     content: "\2022";
-    color: #000000;
+}
+
+@keyframes spanAnimation {
+    from {
+        transform: scale(1);
+        position: relative;
+        top: 0em;
+        opacity: 0;
+        box-shadow: 0px 0px rgba(7, 7, 33, 0.0);
+    }
+    25% {
+        position: relative;
+        top: -2em;
+    }
+    50% {
+        position: relative;
+        top: -2em;
+        box-shadow: 10px 10px rgba(7, 7, 33, 0.25);
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    to {
+        background-color: #466b8e;
+        transform: scale(1.1);
+        color: #ffffff;
+        position: relative;
+        top: 0em;
+        opacity: 0.95;
+        box-shadow: 5px 5px rgba(7, 7, 33, 0.5);
+    }
+}
+
+span:hover {
+    transform: scale(1.1);
+    z-index: 500;
+    color: #ffffff;
+    animation: spanAnimation 1s;
+    background-color: #466b8e;
+    padding: 1em;
+    opacity: 0.95;
+    box-shadow: 5px 5px rgba(7, 7, 33, 0.5);
 }
 
 .text-title {
-    margin-bottom: 1em;
+    display: block;
+    line-height: 1.1em;
     font-size: 1.4em;
     font-weight: 400;
 }
@@ -113,19 +168,17 @@ p {
         width: 40%;
         display: inline-block;
         -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
     }
-
     .presentation-image-left:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5)
-}
-
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5)
+    }
     .presentation-image-right {
         margin-top: 1em;
         margin-left: 1em;
@@ -134,18 +187,17 @@ p {
         width: 40%;
         display: inline-block;
         -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
     }
     .presentation-image-right:hover {
-    -webkit-transform: scale(2);
-    transform: scale(2)
-}
+        -webkit-transform: scale(2);
+        transform: scale(2)
+    }
 }
 
 .stand {

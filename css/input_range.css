@@ -47,7 +47,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-webkit-slider-thumb {
-    box-shadow: 0;
+    box-shadow: none;
     border: 0;
     height: 2em;
     width: 2em;
@@ -73,7 +73,7 @@ input[type=range]::-moz-range-track {
 }
 
 input[type=range]::-moz-range-thumb {
-    box-shadow: 0;
+    box-shadow: none;
     border: 1px solid #000000;
     height: 2em;
     width: 2em;
@@ -106,7 +106,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 input[type=range]::-ms-thumb {
-    box-shadow: 0;
+    box-shadow: none;
     border: 1px solid #000000;
     height: 2em;
     width: 2em;

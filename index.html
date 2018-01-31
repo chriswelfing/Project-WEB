@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/input_range.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
-    <title>index</title>
+    <title>NS Verhalen - Home</title>
 </head>
 
 <body>
-   <header class="main_header">
-        <section> <a href="index.html" class="a-header"><img src="images/nslogo.svg" alt="ns_logo_header"></a>
-            <section class="header_icons_right">
+    <header class="main_header">
+        <div>
+            <a href="index.html" class="a-header"><img src="images/nslogo.svg" alt="ns_logo_header"></a>
+            <div class="header_icons_right">
                 <a href="login.html" class="header_icons_right_img-1"></a>
-                <a href="#" class="header_icons_right_img-2"></a>
-            </section>
-        </section>
+                <a href="saved.html" class="header_icons_right_img-2"></a>
+            </div>
+        </div>
     </header>
     <picture id="top-image"> <img src="images/ns-extra-hero.jpg" alt="NS Extra Hero Image"> </picture>
-
-    <section id="background"></section>
+    <div id="background"></div>
     <main>
         <form id="search">
             <fieldset class="zoek_verhaal">
                 <legend>Zoek een verhaal</legend>
-                <input class="form-text-input" type="text" id="trefwoord" placeholder="trefwoord">
+                <p>Welkom op de verhalen website van de Nederlandse Spoorwegen. Hier kun je verschillende verhalen lezen om het reizen met de NS nog leuker te maken.</p>
+                <input class="form-text-input" type="text" placeholder="trefwoord">
                 <section id="options" class="main_form_hide">
                     <section class="maximale_leestijd">
                         <label for="id-maximale_leestijd" class="form_section_label">Maximale leestijd</label>
@@ -61,142 +62,155 @@
                         <label for="sport">Sport</label>
                     </section>
                 </section>
-                <button id="more_options_expand" type="button">Meer Opties</button>
-                <input type="submit" name="resultaten" value="Toon resultaten"> </fieldset>
+                <div id="searchformbuttons">
+                    <button id="more_options_expand" type="button">Meer Opties</button>
+                    <input type="submit" name="resultaten" value="Toon resultaten"> </div>
+            </fieldset>
         </form>
         <!-- Verhaal cards !-->
-        <p class="verhaal_kaarten_category">Verder te lezen</p>
+        <h1>Verder te lezen</h1>
         <section id="verhaal_kaarten">
             <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title"> Managerstaal </p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in de kraag, geteisterd door regen en het...</p>
-                    <nav class="verhaal_card-buttons"> <a href="verhalen/managerstaal.html" class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop ...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p id="likebutton" class="verhaal_card-like"><span id="likecounter">23</span></p>
+                    <p id="savebutton" class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/graffiti-wall.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-title">Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-description"></p>
-                    <nav class="verhaal_card-buttons"> <a href="verhalen/straattaal.html" class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/graffiti-wall.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Yo kids! Vet cool dat je weer kijkt! Hoor mijn verhaal...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/straattaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">35</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/guy-phone.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title">iPhone</p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek. Kutweer’ dat het was...</p>
-                    <nav class="verhaal_card-buttons"> <a href="verhalen/iphone.html" class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">Like</p>
-                        <p class="verhaal_card-save">Bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/guy-phone.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>iPhone
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/iphone.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">15</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title">Beroemd</p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit...</p>
-                    <nav class="verhaal_card-buttons"> <a class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">19</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title"> Managerstaal </p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <nav class="verhaal_card-buttons"> <a class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">6</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title"> Managerstaal </p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <nav class="verhaal_card-buttons"> <a class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">2</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title"> Managerstaal </p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <nav class="verhaal_card-buttons"> <a class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">12</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title"> Managerstaal </p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <nav class="verhaal_card-buttons"> <a class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">15</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
-            <!-- verhaal card begin !-->
-            <article class="verhaal_card"> <img class="verhaal_card-featureimage" src="images/bus-foto.jpg" alt="x"> <img class="verhaal_card-starrating" src="images/5-star-rating.png" alt="x">
-                <header class="verhaal_card_main">
-                    <p class="verhaal_card-title"> Managerstaal </p>
-                    <time datetime="2017-11-15">15 November 2017</time>
-                    <p class="verhaal_card-readtime">10 min</p>
-                    <p class="verhaal_card-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <nav class="verhaal_card-buttons"> <a class="verhaalbutton" name="verhaal_card-button_leesverder">Lees verder</a>
-                        <p class="verhaal_card-like">like</p>
-                        <p class="verhaal_card-save">bewaar</p>
-                    </nav>
-                </header>
+            <article class="verhaal_card"> <img src="images/bus-foto.jpg" alt="feature-image" class="verhaal_card-featureimage">
+                <div>
+                    <header class="verhaal_card_main">
+                        <h2>Managerstaal
+                    </h2>
+                        <time datetime="2017-11-15"> 15 November 2017 </time>
+                    </header>
+                    <p>Als bus 21 op het Centraal Station aftikt, stap ik uit. Mijn zoon doet een powernapje in z’n bolide. Collegavoetgangers maken hun meters met de kop in...</p>
+                </div>
+                <p class="verhaal_card-readtime">10 min</p>
+                <nav> <a href="verhalen/managerstaal.html" class="verhaalbutton">Lees verder</a>
+                    <p class="verhaal_card-like">17</p>
+                    <p class="verhaal_card-save">Bewaar</p>
+                </nav>
             </article>
-            <!-- verhaal card einde !-->
         </section>
     </main>
     <!-- JAVASCRIPT !-->
     <script src="js/main_form_options.js"></script>
+    <script src="js/micro-interacties.js"></script>
 </body>
 
 </html>
